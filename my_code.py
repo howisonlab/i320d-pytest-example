@@ -18,4 +18,10 @@ def test_fix_phone_num():
 def test_fix_phone_num_dash():
   assert fix_phone_num('555-442-98761') == '(555) 442 98761'
   assert fix_phone_num('(321) 654 3333') ==  '(321) 654 3333'
-  
+
+def numadd(a,b)
+  return a+b
+
+def test_numadd_fail():
+  assert numadd(1,3) == 5
+
