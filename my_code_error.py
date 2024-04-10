@@ -26,16 +26,16 @@ def test_fix_phone_num():
   with pytest.raises(ValueError):
     fix_phone_num("51")
 
-def test_fixed_nums_pass():
-    assert fix_phone_num('555-442-98761') == '(555) 442 98761'
-    assert fix_phone_num('(321) 654 3333') == '(321) 654 3333'
+def test_fixed_nums_not_handled():
+  assert fix_phone_num('555-442-98761') == '(555) 442 98761'
+  assert fix_phone_num('(321) 654 3333') == '(321) 654 3333'
 
-# def test_fixed_nums_fail():
-#     with pytest.raises(ValueError):
-#        fix_phone_num("555-442-98761")
-#
-#    with pytest.raises(ValueError):
-#        fix_phone_num("(321) 654 3333")
+# def test_fixed_nums_handled():
+#   with pytest.raises(ValueError):
+#       fix_phone_num("555-442-98761")
+
+#   with pytest.raises(ValueError):
+#     fix_phone_num("(321) 654 3333")
 
 def test_is_digit():
     with pytest.raises(ValueError):
