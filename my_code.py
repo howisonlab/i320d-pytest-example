@@ -12,3 +12,6 @@ def fix_phone_num(phone_num_to_fix):
 
 def test_fix_phone_num():
   assert fix_phone_num("5125558823") == '(512) 555 8823'
+
+def test_fake_fix_phone_num():
+  assert 7 == 9
