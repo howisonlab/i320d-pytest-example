@@ -18,6 +18,8 @@ def test_fix_phone_num():
 def fix_dash_paranthesis():
   assert fix_phone_num("555-442-98761") = '(555) 442 9876'
   assert fix_phone_num("(321) 654 3333") = '(321) 654 3333'
-  assert 9 = 3
-  assert 4 = 8
+  assert 9 < 3
+  assert 4 > 8
+  assert True == False
+  
 
